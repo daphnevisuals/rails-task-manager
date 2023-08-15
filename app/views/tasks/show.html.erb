@@ -1,2 +1,9 @@
+<h2><%= @task.title%></h2>
 <p><%= @task.details %></p>
 <%= link_to "See all tasks", tasks_path %>
+
+<%= link_to "Edit", edit_task_path(@task) %>
+<%# <%= link_to "Delete",
+  restaurant_path(@restaurant),
+  data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }
+%>
